@@ -1,18 +1,94 @@
----
-layout: default
----
+<html>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+    <title>Toolbox of adventure stories and lessons learned</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    <meta name="description" content="Toolbox of adventure stories and lessons learned">
+    <meta property="og:description" content="Toolbox of adventure stories and lessons learned">
+
+    <meta name="author" content="Yours truly">
+
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="alternate" type="application/rss+xml" title="Toolbox of adventure stories and lessons learned" href="/feed.xml">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+</head>
+
+<body>
+    <div class="wrapper-masthead">
+        <div class="container">
+            <header class="masthead clearfix">
+                <a href="/" class="site-avatar"><img src="/images/burrito.jpg"></a>
+
+                <div class="site-info">
+                    <h1 class="site-name"><a href="/">Freewheel to Root</a></h1>
+                    <p class="site-description">Welcome to your new blog!</p>
+                </div>
+
+                <nav>
+                    <a href="">Blog</a>
+                    <a href="/about">About</a>
+                    <a href="/howto.html">How To</a>
+                    <!-- <a href="http://github.com/triharder">GitHub Repo</a> -->
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+        <div class="posts">
+            {% for post in site.posts %}
+            <article class="post">
+
+                <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+                <div class="entry">
+                    {{ post.excerpt }}
+                </div>
+
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+            </article>
+            {% endfor %}
+        </div>
+
+    </div>
     </article>
-  {% endfor %}
-</div>
+
+    <div class="wrapper-footer">
+        <div class="container">
+            <footer class="footer">
+
+
+
+
+                <!-- <a href="http://github.com/triharder/triharder.github.io"><i class="svg-icon github"></i></a> -->
+
+                <a href="https://www.instagram.com/b.cher4031/"><i class="svg-icon instagram"></i></a>
+
+                <!-- Add twitter handle in URL -->
+                <a href="http://twitter.com/"><i class="svg-icon twitter"></i></a>
+
+
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
