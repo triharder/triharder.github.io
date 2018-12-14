@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Yours Truly!
-permalink: /about/
+permalink: /about
 
 comments: true
 ---
 
-<p><img src="/images/burrito.jpg" alt="That’s me eating the vegan al pastor burrito from Wild Burrito in Philadelphia." title="Burrito addict!"></p>
+<p><img src="/images/burrito.jpg" alt="That’s me eating the vegan al pastor burrito from Wild Burrito in Philadelphia." title="Burrito addict!" width="200" height="400"></p>
 
 Hello there adventurers, fitness enthusiasts, inquisitors, and freewheelers! Welcome to a toolbox of adventure stories (“freewheel”) and the lessons learned (“root”)!
 
