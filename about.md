@@ -2,15 +2,13 @@
 layout: page
 title: Yours Truly!
 permalink: /about/
-image:
-
-    feature: burrito.jpg
-    caption: That’s me eating the vegan al pastor burrito from Wild Burrito.
 
 comments: true
 ---
 
-Hello there adventurers, fitness enthusiasts, inquisitors, and freewheelers! Welcome to a toolbox of adventure stories (“freewheel”) and the lessons learned (“root”)!v
+<p><img src="/images/burrito.jpg" alt="That’s me eating the vegan al pastor burrito from Wild Burrito in Philadelphia." title="Burrito addict!"></p>
+
+Hello there adventurers, fitness enthusiasts, inquisitors, and freewheelers! Welcome to a toolbox of adventure stories (“freewheel”) and the lessons learned (“root”)!
 
 ### More Information
 
@@ -18,4 +16,4 @@ My name is Cherie. I am a personal trainer and copywriter living in Philadelphia
 
 ### Contact me
 
-[Email](mailto:cherie.landis@gmail.com)
+<a href="mailto:cherie.landis@gmail.com"><i class="svg-icon mail"></i></a>
