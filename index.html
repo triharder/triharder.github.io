@@ -1,18 +1,184 @@
----
-layout: default
----
+<html>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+    <title>Welcome to your new blog!</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <meta name="description" content="Welcome to your new blog!">
+    <meta property="og:description" content="Welcome to your new blog!">
+
+    <meta name="author" content="Yours truly">
+
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="alternate" type="application/rss+xml" title="Welcome to your new blog!" href="/feed.xml">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+</head>
+
+<body>
+    <div class="wrapper-masthead">
+        <div class="container">
+            <header class="masthead clearfix">
+                <a href="/" class="site-avatar"><img src="/images/burrito.jpg"></a>
+
+                <div class="site-info">
+                    <h1 class="site-name"><a href="/">Freewheel to Root</a></h1>
+                    <p class="site-description">Welcome to your new blog!</p>
+                </div>
+
+                <nav>
+                    <a href="">Blog</a>
+                    <a href="/about">About</a>
+                    <!-- <a href="http://github.com/triharder">GitHub Repo</a> -->
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+        <div class="posts">
+
+            <article class="post">
+
+                <h1><a href="/Introducing-Jekyll-Now/">Introducing Jekyll Now</a></h1>
+
+                <div class="entry">
+                    <p><a href="http://github.com/jekyll/jekyll">Jekyll</a> is a static site generator that's perfect for GitHub hosted blogs.</p>
+
+                    <p><a href="http://github.com/barryclark/jekyll-now">Jekyll Now</a> makes it easier to create a Jekyll blog, by eliminating a lot of the up front setup.</p>
+
+                    <ul>
+                        <li>You don't need to touch the command line</li>
+                        <li>You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:</li>
+                        <li>You don't need to install runtime dependancies like markdown processors, Pygments, etc</li>
+                        <li>It's easy to try out, you can just delete your forked repository if you don't like it</li>
+                        <li>In a few minutes you'll be set up with a minimal, responsive blog just like this one—giving you more time to spend on making your blog awesome!</li>
+                    </ul>
+
+                    <h2>Create your blog in 30 seconds!</h2>
+
+                    <p><img src="/images/step1.gif" alt="Initial setup of Jekyll Now" title="Initial setup of Jekyll Now"></p>
+
+                    <h2>Easy Blogging!</h2>
+
+                    <p>✓ <em>Command-line free fork-first workflow</em>, using GitHub.com to create, customize and post to your blog<br> ✓ Fully responsive and mobile optimized base theme<br> ✓ Sass/Coffeescript support using Jekyll 2.0<br> ✓ Free hosting
+                        on your GitHub Pages user site<br> ✓ Markdown blogging<br> ✓ Syntax highlighting<br> ✓ Disqus commenting<br> ✓ Google Analytics integration<br> ✓ SVG social icons for your footer<br> ✓ 3 http requests, including your avatar </p>
+
+                    <p>✘ No installing dependancies<br> ✘ No need to set up local development<br> ✘ No configuring plugins<br> ✘ No need to spend time on theming<br> ✘ More time to code other things ... wait ✓! </p>
+
+                    <p><a href="http://github.com/barryclark/jekyll-now#quick-start">Quick Start walkthrough on the Jekyll Now GitHub repository</a>.</p>
+
+                </div>
+            </article>
+
+            <article class="post">
+
+                <h1><a href="/Markdown-Style-Guide/">Markdown Style Guide</a></h1>
+
+                <div class="entry">
+                    <p>This is a demo of all styled elements in Jekyll Now.</p>
+
+                    <p><a href="https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md">View the markdown used to create this post</a>.</p>
+
+                    <p>This is a paragraph, it's surrounded by whitespace. Next up are some headers, they're heavily influenced by GitHub's markdown style.</p>
+
+                    <h2>Header 2 (H1 is reserved for post titles)</h2>
+
+                    <h3>Header 3</h3>
+
+                    <h4>Header 4</h4>
+
+                    <p>A link to <a href="http://github.com/barryclark/jekyll-now/">Jekyll Now</a>. A big ass literal link <a href="http://github.com/barryclark/jekyll-now/">http://github.com/barryclark/jekyll-now/</a></p>
+
+                    <p>An image, located within /images</p>
+
+                    <p><img src="/images/jekyll-logo.png" alt="an image alt text" title="an image title"></p>
+
+                    <ul>
+                        <li>A bulletted list</li>
+                        <li>alternative syntax 1</li>
+                        <li>alternative syntax 2
+
+                            <ul>
+                                <li>an indented list item</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ol>
+                        <li>An</li>
+                        <li>ordered</li>
+                        <li>list</li>
+                    </ol>
+
+                    <p>Inline markup styles:</p>
+
+                    <ul>
+                        <li><em>italics</em></li>
+                        <li><strong>bold</strong></li>
+                        <li><code>code()</code></li>
+                    </ul>
+
+                    <blockquote>
+                        <p>Blockquote</p>
+
+                        <blockquote>
+                            <p>Nested Blockquote</p>
+                        </blockquote>
+                    </blockquote>
+
+                    <p>Syntax highlighting can be used with triple backticks, like so:</p>
+                    <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="cm">/* Some pointless Javascript */</span>
+<span class="kd">var</span> <span class="nx">rawr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"r"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">];</span>
+</code></pre></div>
+                    <p>Use two trailing spaces<br> on the right<br> to create linebreak tags </p>
+
+                    <p>Finally, horizontal lines</p>
+
+                    <hr>
+
+                    <hr>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <div class="wrapper-footer">
+        <div class="container">
+            <footer class="footer">
+
+
+
+
+                <a href="http://github.com/triharder/triharder.github.io"><i class="svg-icon github"></i></a>
+
+
+
+                <!-- Add twitter handle in URL -->
+                <a href="http://twitter.com/"><i class="svg-icon twitter"></i></a>
+
+
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
